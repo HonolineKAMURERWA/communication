@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Family project</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Who we are.html">Who we are</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Our Gallery.html">Our Gallery</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="sign up.html">Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+  <main class="content">
+    <section id="home">
+      <h2>Welcome to the Family Website Dashboard</h2>
+      <p>This is the home section of the dashboard. You can display an overview of the family website here.</p>
+    </section>
+    
+    <section id="members">
+      <!-- <h2>Family Members</h2> -->
+      <ul>
+        <!-- <li>Augustin Ugirashebuja (Papa Viateur)</li>
+        <li>Munezero Gasimba Francois Xavier (Papa Cyusa)</li>
+        <li>Judith (Mama Cyusa)</li>
+        <li>Francois Sekabwa (Papa Fidele)</li>
+        <li>Valerie Mukamuyango (Mama Fidele)</li>
+        <li>Francine Ingabire</li>
+        <li>Theogene Sekanyambo (Papa Olla)</li>
+        <li>Kiki Hycenthe</li>
+        <li>Ezechiel Dufitumukiza</li>
+        <li>Jean Bosco Ahorukomeye</li>
+        <li>Yvonne Mukanyirigira (Mama Serge)</li>
+        <li>Edithe Iragena</li>
+        <li>Philippe Nkwakuzi</li>
+        <li>Paole Ineza (Mama Kelsi)</li>
+        <li>Obed Masengesho</li>
+        <li>Cyusa Benjamin</li>
+        <li>Fidele Nikwigize</li>
+        <li>Delphine Kamusabwa</li>
+        <li>Honorine Kamurerwa</li> -->
+        <!-- Add more family members here -->
+      </ul>
+    </section>
+    
+    <section id="calendar">
+      <h2>Family Calendar</h2>
+      <!-- Add a calendar or events here -->
+
+
+  <title>Family Website Calendar</title>
+  <!-- Include FullCalendar CSS from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Family Website Calendar</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#members">Members</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+    </ul>
+  </nav>
+  
+  <main class="content">
+    <section id="home">
+      <!-- Home section content -->
+    </section>
+    
+    <section id="members">
+      <!-- Members section content -->
+    </section>
+    
+    <section id="calendar">
+      <!-- Calendar section content -->
+      <div id="calendar-container"></div>
+    </section>
+  </main>
+
+  <!-- Include FullCalendar and jQuery from CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      $('#calendar-container').fullCalendar({
+      
+        header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+     
+
+      events: [
+        {
+          title: 'Family Gathering',
+          start: '2023-07-30',
+          description: 'Join us for a family gathering at the park!',
+          color: '#007bff' 
+        },
+        {
+          title: 'Dinner with Grandparents',
+          start: '2023-08-05',
+          end: '2023-08-06',
+          description: 'Having dinner  with grandparents.',
+          color: '#ff4500'
+    
+        },
+    ]
+
+
+
+      });
+    });
+  </script>
+</body>
+</html>
+
+    </section>
+  </main>
+</body>
+</html>
+
