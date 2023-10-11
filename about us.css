@@ -93,11 +93,13 @@ nav {
   text-decoration: underline;
 }
 .kamure{
-    margin-left:10% ;
-
-}
+    margin-left:15% ;
+      margin-top: -20%;
+      left: 0;
+    
+  }
 .kamure h1{
-    margin-left:20% ;
+    margin-left:15% ;
     text-decoration: underline;
     font-size: 40px;
 }
