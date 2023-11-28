@@ -54,17 +54,17 @@ nav {
 .container {
     
     display: flex;
-    margin-left: 3%;
-    height: 83vh;
+    margin-left: 7%;
+    height: 79vh;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 #signup-form {
-    border: 2px solid #ccc;
+    border: 2px solid #c5b9b9;
     padding: 20px;
     border-radius: 5px;
-    width: 500px;
+    width: 470px;
 }
 
 h1 {
@@ -79,7 +79,7 @@ label {
 }
 
 input {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -101,3 +101,21 @@ button {
 button:hover {
     background-color:rgb(41, 110, 159);
 }
+
+
+
+button a{
+    font-size: 20px;
+    border-radius: 40px;
+  }
+  .min button{
+    background-color: rgb(58, 134, 172);
+    color: black;
+    width: 300px;
+    height: 40px;
+    margin-left: 70%;
+    box-shadow: #555;
+  }
+  @media screen and (max-width:800px) {
+    
+  }

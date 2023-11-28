@@ -87,7 +87,7 @@ input {
 button {
   width: 70%;
   padding: 10px;
-  background-color: #2d649f;
+  background-color: #56595c;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -98,4 +98,20 @@ button {
 
 button:hover {
   background-color: #0579f5;
+}
+
+button a{
+  font-size: 20px;
+  border-radius: 40px;
+}
+.min button{
+  background-color: rgb(58, 134, 172);
+  color: black;
+  width: 300px;
+  height: 40px;
+  margin-left: 70%;
+  box-shadow: #555;
+}
+@media screen and (max-width:800px) {
+  
 }

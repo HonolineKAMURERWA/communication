@@ -51,7 +51,7 @@ nav {
     width: 100%;
 }
 .img-0{
-    margin-left: 5%;
+    margin-left: 6%;
     border-radius: 20px;
 
 }
@@ -66,3 +66,19 @@ nav {
     margin-left: 2%;
     border-radius: 20px;
 }
+
+button a{
+    font-size: 20px;
+    border-radius: 40px;
+  }
+  .min button{
+    background-color: rgb(58, 134, 172);
+    color: black;
+    width: 300px;
+    height: 40px;
+    margin-left: 70%;
+    box-shadow: #555;
+  }
+  @media screen and (max-width:800px) {
+    
+  }

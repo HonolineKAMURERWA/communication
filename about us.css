@@ -177,7 +177,7 @@ nav {
     bottom:0;
     left: 0; */
     width: 100%;
-    height:40% ;
+    height:58% ;
     background-color:#333333;
     color: #fff;
     text-align: center;
@@ -187,13 +187,14 @@ nav {
   .allRights{
     color: rgb(179, 173, 194);
     font-size: 20px;
+    margin-right:-15%;
   }
   .animated-footer{
     display: flex;
     margin-left:1%;
     gap: 80px;
     color: #000000;
-    font-size: 18px;
+    font-size: 17px;
     font-style: oblique;
   }
   .footer-icons{
@@ -201,18 +202,6 @@ nav {
     margin-right: 50%;
     gap: 40px;
   }
-
-
-
-
-  /* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  } */
   
   .logo {
     position: relative;
@@ -248,4 +237,28 @@ nav {
   
   .star span {
     transform: rotate(-45deg);
+  }
+
+
+  button a{
+    font-size: 17px;
+    border-radius: 40px;
+    padding-top: -4%;
+  }
+  .min button{
+    background-color: rgb(58, 134, 172);
+    color: black;
+    width: 300px;
+    height: 50px;
+    /* margin-left: 70%; */
+    margin-top: -4%;
+    box-shadow: #555;
+  }
+  @media screen and (max-width:800px) {
+    
+  }
+  .notre{
+    display: flex;
+    gap: 8px;
+    margin-left: 10;
   }
