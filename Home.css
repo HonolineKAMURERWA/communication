@@ -147,7 +147,7 @@ nav {
     color: #fff;
     padding: 10px 20px;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .menu a:hover {
@@ -169,7 +169,12 @@ nav {
     width: 100%;
 }
 
-  
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
   .moving-heading {
     font-size: 40px;
     color: #333;
@@ -212,173 +217,117 @@ nav {
     left: 0;
 }
 
-
-.triangle-container{
-  margin-left: 20%;
-  font-size: 24px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards, moveUp 1s forwards;
-  animation-delay: 5s;
-}
-
-@keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-@keyframes moveUp {
-  from {
-      transform: translateY(20px);
-  }
-  to {
-      transform: translateY(0);
-  }
-}
-
-
-.triangle-text-1{
-  background-color: #363333;
-  margin-right: 30%;
-  height: 100px;
-  padding-top: 3%;
-  margin-left: 10%;
-  border-radius: 30px;
-
-}
-.triangle-text-1 p{
-  margin-left: 25%;
-  font-size: 17px;
-
-}
-
-.triangle-text-2{
-  background:#759074;
-  margin-right: 20%;
-  height: 130px;
-  padding-top: 3%;
-  margin-left: -5%;
-  border-radius: 30px;
-
-}
-.triangle-text-2 p{
-  margin-left: 20%;
-  font-size: 17px;
-
-}
-
-.triangle-text-3{
-  background-color: #524350;
-  margin-right:10%;
-  height: 140px;
-  padding-top: 3%;
-  margin-left: -15%;
-  border-radius: 30px;
-
-}
-.triangle-text-3 p{
-  margin-left: 15%;
-  font-size: 17px;
-
-}
-
-.magic-1{
-  margin-left:8%;
-  border-radius: 50%;
-  background-color: #363333;
-  width: 560px;
-  height: 260px;
-}
-
-.magic-1 p{
-  margin-left: 12%;
-  padding-top: 1%;
-  font-size: 17px;
-
-}
-.magic-1 h3{
-  margin-left: 35%;
-  padding-top: 5%;
- font-style: oblique;
- font-size: 22px;
- text-decoration: underline;
-}
-
-
-.magic-2{
-  margin-left:46%;
-  margin-top: -20%;
-  border-radius: 50%;
-  background-color: #9a9bb0;
-  width: 560px;
-  height: 240px;
-}
-.magic-2 p{
-  margin-left: 20%;
-  padding-top: 1%;
-  font-size: 17px;
-
-}
-.magic-2 h3{
-  margin-left: 35%;
-  padding-top: 5%;
-  font-size: 20px;
-  font-style: oblique;
-  text-decoration: underline;
-}
-.magic-3{
-  margin-left: 30%;
-  background: #b09bad;
-  border-radius: 50%;
-  width: 560px;
-  height: 250px;
-  margin-top: -7%;
-}
-.magic-3 p{
-  margin-left:20%;
-  padding-top:1%;
-  font-size: 17px;
-
-}
-.magic-3 h3{
-  margin-left: 35%;
-  padding-top: 5%;
-  font-size: 22px;
-  font-style: oblique;
-  text-decoration: underline;
-
-}
-footer {
-  width: 100%;
-  height:45% ;
-  background-color: #66626a;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  border-radius: 30px;
-}
-
-.allRights{
-  color: rgb(179, 173, 194);
-}
-.animated-footer{
+.triangle-container {
   display: flex;
-  margin-left:1%;
-  gap: 80px;
-  color: #dbcaca;
-  font-size: 16px;
-  font-style: oblique;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
-.footer-icons{
-  font-size: 30px;
-  margin-right: 50%;
-  gap: 40px;
+
+.triangle-text-1,
+.triangle-text-2,
+.triangle-text-3 {
+  width: 30%;
+}
+
+.triangle-1 {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.triangle-text-2 p,
+.triangle-text-3 p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.magic-1,
+.magic-2,
+.magic-3 {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8p;
+}
+
+h3{
+  color: #007BFF;
+  margin-left: 40%;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.magic-1 p,
+.magic-2 p,
+.magic-3 p {
+  color: #555;
+  line-height: 1.6;
+  margin-left: 3%;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 30px;
+  margin-left: 10%;
+}
+
+h3 {
+  color: #007BFF;
+  margin-left: 5px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 100px;
+  margin-left :77%;
+}
+.social-icons{
+  font-size: 25px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  background-color: #555;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 0;
 }
 
 .container-2{

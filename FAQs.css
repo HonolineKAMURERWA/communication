@@ -46,6 +46,13 @@ nav {
     width: 100%;
 }
 
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
 .belows h1{
     margin-left: 30%;
 }

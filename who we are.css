@@ -48,7 +48,12 @@ nav {
 .menu a:hover::before {
     width: 100%;
 }
-
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
 
 .need h1{
     margin-left: 25%;
@@ -87,11 +92,6 @@ button:hover {
     margin-left: 20%;
     font-size: 20px;
 }
-
-
-
-
-
 .team-page h1 {
     text-align: center;
     margin: 30px 0px;

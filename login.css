@@ -55,7 +55,12 @@ nav {
 .menu a:hover::before {
     width: 100%;
 }
-
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
 .container {
   background-color: #fff;
   padding: 20px;

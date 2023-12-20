@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Family project</title>
+    <title>Event Dashboard</title>
     <link rel="stylesheet" href="Dashboard.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<body>
+  <header>
+    <h1>Our Family Dashboard</h1>
+</header>
 <body>
     <nav>
         <ul class="menu">
@@ -17,111 +21,179 @@
             <li><a href="Our Gallery.html">Our Gallery</a></li>
             <li><a href="contact us.html">Contact us</a></li>
             <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Appointment.html">Appointment</a></li>
             <li><a href="sign up.html">Sign up</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
-    <div class="dashboard">
-        <div class="widget" id="familyWidget">
-            <h2>Family Members</h2>
-            <ul id="familyList">
-              Gasimba Francois Xavier Munezero <br>
-              Judith <br>
-               Francois Sekabwa <br>
-               Valerie Mukamuyango <br>
-               Francine Ingabire   <br>
-              Theogene  Sekanyambo <br>
-              Hycenthe Ikirezi   <br>
-               Ezechiel Dufitumukize <br>
-               Jean Bosco Ahorukomeye<br>
-              Yvonne Mukanyirigira   <br>
-              Edithe  Iragena <br>
-              Philippe  Nkwakuzi <br>
-              Paola  Ineza <br>
-              Obed Masengesho  <br>
-              Jean Fidele  Nikwigize<br>
-              Delphine   Kamusabwa<br>
-              Honorine   Kamurerwa<br>
-            </ul>
-        </div>
-        <div class="widget" id="calendarWidget">
-            <h2>Upcoming Events</h2>
-            <div id="calendar">
-              
-            </div>
-            <button id="addEventBtn">Add Event</button>
-        </div>
-    </div>
-  <script src="script.js">
-    document.addEventListener('DOMContentLoaded', function () {
-    // Sample data for family members
-    const familyMembers = ['John', 'Jane', 'Bob', 'Alice'];
+        <style>
+ *{
+margin: 0;
+padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+nav {
+    background-color: #363333;
+    padding: 10px 0;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
 
-    // Sample data for upcoming events
-    let upcomingEvents = [
-        {
-            title: 'Family Reunion',
-            date: '2023-11-15'
-        },
-        {
-            title: 'Dinner Party',
-            date: '2023-11-20'
-        },
-        {
-            title: 'Movie Night',
-            date: '2023-12-01'
-        }
-    ];
+.menu li {
+    position: relative;
+}
 
-    // Function to display family members
-    function displayFamilyMembers() {
-        const familyList = document.getElementById('familyList');
-        familyMembers.forEach(member => {
-            const listItem = document.createElement('li');
-            listItem.textContent = member;
-            familyList.appendChild(listItem);
-        });
-    }
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
 
-    // Function to display upcoming events
-    function displayCalendar() {
-        const calendarContainer = document.getElementById('calendar');
-        const addEventBtn = document.getElementById('addEventBtn');
+.menu a:hover {
+    background-color: #555;
+}
 
-        addEventBtn.addEventListener('click', function () {
-            const newEventTitle = prompt('Enter a new event title:');
-            const newEventDate = prompt('Enter the event date (YYYY-MM-DD):');
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #4CAF50;
+    transition: 0.5s;
+}
 
-            if (newEventTitle && newEventDate) {
-                const newEvent = {
-                    title: newEventTitle,
-                    date: newEventDate
-                };
-
-                upcomingEvents.push(newEvent);
-                displayCalendar();
+.menu a:hover::before {
+    width: 100%;
+}
+    
+            header {
+                background-color: #333;
+                color: white;
+                padding: 1em;
+                text-align: center;
             }
-        });
+    
+            .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                margin-left: 40%;
+                font-size: 30px;
+            }
+    
+            #event-form {
+                max-width: 800px;
+                margin-right: 1em;
+            }
+    
+            #calendar {
+                flex-grow: 1;
+                font-size: 300xp;
+            }
+    
+            #event-list {
+                list-style-type: none;
+                padding: 0;
+                margin-left: 30%;
 
-        calendarContainer.innerHTML = ''; // Clear previous content
+            }
+    
+            .event {
+                margin-bottom: 1em;
+                padding: 0.5em;
+                background-color: #f4f4f4;
+                border-radius: 5px;
+            }
+            button{
+                width: 200px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 40px;
+            }
 
-        upcomingEvents.forEach(event => {
-            const eventDiv = document.createElement('div');
-            eventDiv.className = 'event';
-            eventDiv.innerHTML = `<span>${event.title}</span><span>${event.date}</span>`;
-            calendarContainer.appendChild(eventDiv);
-        });
-    }
+            label {
+              display: block;
+             margin-bottom: 5px;
+             }
+            input{
+                width: 100%;
+               padding: 10px;
+               margin-bottom: 15px;
+               border: 1px solid #ccc;
+               border-radius: 3px;
+ 
+            }
 
-    // Call functions to display data
-    displayFamilyMembers();
-    displayCalendar();
-});
-
-
-
-  </script>
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Event Dashboard</h1>
+        </header>
+    
+        <div class="container">
+            <div id="event-form">
+                <h4>Add event</h4>
+                <form id="add-event-form">
+                    <!-- <label for="event-name">Event Name:</label><br> -->
+                    <input type="text" id="event-name" required>
+                    <h4> Event name</h4>
+    
+                    <!-- <label for="event-date">Event Date:</label><br> -->
+                    <input type="date" id="event-date" required>
+                    <h4>Event date</h4><br>
+    
+                    <button type="button" onclick="addEvent()">Add Event</button>
+                </form>
+            <!-- </div> -->
+    
+            <div id="calendar">
+                <!-- Calendar content goes here -->
+            </div>
+        </div>
+    
+        <div>
+            <h3>Event List</h3>
+            <ul id="event-list"></ul>
+        </div>
+        </div>
+    
+        <script>
+            function addEvent() {
+                const eventName = document.getElementById('event-name').value;
+                const eventDate = document.getElementById('event-date').value;
+    
+                if (eventName && eventDate) {
+                    const eventList = document.getElementById('event-list');
+                    const listItem = document.createElement('li');
+                    listItem.classList.add('event');
+                    listItem.textContent = `${eventName} - ${eventDate}`;
+                    eventList.appendChild(listItem);
+    
+                    // Clear form fields
+                    document.getElementById('event-name').value = '';
+                    document.getElementById('event-date').value = '';
+                }
+            }
+        </script>
     </body>
-</html>
+    </html>
+    
+
+   
+
 

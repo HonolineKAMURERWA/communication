@@ -51,6 +51,12 @@ nav {
 .menu a:hover::before {
     width: 100%;
 }
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
 
 .belonging h1{
   padding-top: 2%;
@@ -192,9 +198,9 @@ nav {
   .animated-footer{
     display: flex;
     margin-left:1%;
-    gap: 80px;
+    gap: 50px;
     color: #000000;
-    font-size: 17px;
+    font-size: 21px;
     font-style: oblique;
   }
   .footer-icons{
